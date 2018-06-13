@@ -5,6 +5,18 @@ window.onload = function () {
     document.getElementById("removeBtn").addEventListener("click", removeURLstorage)
 }
 
+
+function changeBackgroundColor () {
+    console.log('muudan värvi')
+    
+    r = Math.round(Math.random() * 255)
+    g = Math.round(Math.random() * 255)
+    b = Math.round(Math.random() * 255)
+  
+    document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
+  }
+
+
 function clearStorage () {
     window.localStorage.clear()
     showAllURLs()
