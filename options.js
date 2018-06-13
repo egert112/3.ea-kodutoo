@@ -6,7 +6,7 @@ window.onload = function () {
 }
 
 
-function changeBackgroundColor () {
+window.onload = function () {
     console.log('muudan värvi')
     
     r = Math.round(Math.random() * 255)
@@ -14,7 +14,7 @@ function changeBackgroundColor () {
     b = Math.round(Math.random() * 255)
   
     document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
-  }
+}
 
 
 function clearStorage () {
